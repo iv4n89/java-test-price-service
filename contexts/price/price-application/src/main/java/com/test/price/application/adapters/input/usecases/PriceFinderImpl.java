@@ -18,6 +18,15 @@ public final class PriceFinderImpl implements PriceFinder {
 
   private final PriceRepository priceRepository;
 
+  /**
+   *  Finds a price by brand, product and date.
+   *  If there are more than one price, we will return the one with the highest priority
+   *
+   * @param brandId brand identifier
+   * @param productId product identifier
+   * @param date date when we want to find the price
+   * @return the price found
+   */
   @Override
   public PriceModel findPrice(Long brandId, Long productId, LocalDateTime date) {
     final BrandId brandIdValueObject = new BrandId(brandId);

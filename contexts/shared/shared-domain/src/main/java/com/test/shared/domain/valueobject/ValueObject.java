@@ -2,6 +2,11 @@ package com.test.shared.domain.valueobject;
 
 import java.util.Objects;
 
+/**
+ * Base class for all value object classes
+ *
+ * @param <T> value
+ */
 public abstract class ValueObject<T> {
   protected final T value;
 

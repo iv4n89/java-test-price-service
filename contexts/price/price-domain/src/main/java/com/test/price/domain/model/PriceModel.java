@@ -12,6 +12,7 @@ import com.test.shared.domain.valueobject.ProductId;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+
 public final class PriceModel implements AggregateRoot {
   private final BrandId brandId;
   private final LocalDateTime startDate;
@@ -40,6 +41,11 @@ public final class PriceModel implements AggregateRoot {
     return new Builder();
   }
 
+  /**
+   *  Compare priority between two price models
+   * @param priceModel price model to compare
+   * @return 1 if this price model has higher priority, 0 if both have the same priority, -1 if this price model has lower priority than the other one
+   */
   public Integer comparePriority(PriceModel priceModel) {
     return this.priority.getValue() - priceModel.priority.getValue();
   }

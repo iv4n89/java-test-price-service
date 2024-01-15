@@ -12,6 +12,12 @@ import com.test.shared.domain.valueobject.ProductId;
 public final class PriceDataMapper {
   private PriceDataMapper() {}
 
+  /**
+   * Convert PriceEntity to PriceModel
+   *
+   * @param priceEntity PriceEntity to convert
+   * @return PriceModel converted
+   */
   public static PriceModel toDomainModel(PriceEntity priceEntity) {
     return PriceModel.builder()
         .brandId(new BrandId(priceEntity.getBrandId()))
@@ -25,6 +31,12 @@ public final class PriceDataMapper {
         .build();
   }
 
+  /**
+   * Convert PriceModel to PriceEntity
+   *
+   * @param priceModel PriceModel to convert
+   * @return PriceEntity converted
+   */
   public static PriceEntity toEntity(PriceModel priceModel) {
     return PriceEntity.builder()
         .brandId(priceModel.getBrandId().getValue())

@@ -16,6 +16,12 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
+    /**
+     * Handle all exceptions not handled by other handlers
+     *
+     * @param exception the exception to handle
+     * @return ErrorDto
+     */
     @ResponseBody
     @ExceptionHandler(value = { Exception.class })
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
@@ -27,6 +33,11 @@ public class GlobalExceptionHandler {
                 .build();
     }
 
+    /**
+     *  Handle all exceptions not handled by other handlers
+     * @param exception the exception to handle
+     * @return ErrorDto
+     */
     @ResponseBody
     @ExceptionHandler(value = { IllegalArgumentException.class })
     @ResponseStatus(HttpStatus.BAD_REQUEST)
@@ -38,6 +49,12 @@ public class GlobalExceptionHandler {
                 .build();
     }
 
+    /**
+     * Handle all exceptions not handled by other handlers
+     *
+     * @param exception the exception to handle
+     * @return ErrorDto
+     */
     @ResponseBody
     @ExceptionHandler(value = { ValidationException.class })
     @ResponseStatus(HttpStatus.BAD_REQUEST)
@@ -62,6 +79,12 @@ public class GlobalExceptionHandler {
         return errorDto;
     }
 
+    /**
+     *  Extract violations from exception
+     *
+     * @param exception the exception to extract violations
+     * @return String
+     */
     private String extractViolationsFromException(ConstraintViolationException exception) {
         return exception.getConstraintViolations().stream()
                 .map(ConstraintViolation::getMessage)
