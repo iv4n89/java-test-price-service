@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RequestMapping("/price")
 @RequiredArgsConstructor
 @RestController
@@ -18,6 +19,12 @@ public class PricePostController {
 
   private final PriceApplicationService priceApplicationService;
 
+  /**
+   * Finds a price.
+   *
+   * @param request the request with the data to find the price
+   * @return the response with the price found
+   */
   @PostMapping("/find")
   public ResponseEntity<PriceFinderResponseDto> findPrice(
       @RequestBody PriceFinderRequestDto request) {

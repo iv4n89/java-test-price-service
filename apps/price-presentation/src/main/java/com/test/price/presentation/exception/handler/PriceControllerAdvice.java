@@ -11,9 +11,17 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+
 @Slf4j
 @ControllerAdvice
 public class PriceControllerAdvice extends GlobalExceptionHandler {
+
+  /**
+   *  Handles PriceDomainException.
+   *
+   * @param exception the exception to handle
+   * @return ErrorDto
+   */
   @ResponseBody
   @ExceptionHandler(value = {PriceDomainException.class})
   @ResponseStatus(HttpStatus.BAD_REQUEST)
@@ -25,6 +33,12 @@ public class PriceControllerAdvice extends GlobalExceptionHandler {
         .build();
   }
 
+  /**
+   *  Handles PriceNotFoundException.
+   *
+   * @param exception the exception to handle
+   * @return ErrorDto
+   */
   @ResponseBody
   @ExceptionHandler(value = {PriceNotFoundException.class})
   @ResponseStatus(HttpStatus.NOT_FOUND)

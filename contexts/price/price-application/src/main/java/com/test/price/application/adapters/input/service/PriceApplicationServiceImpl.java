@@ -16,6 +16,15 @@ public final class PriceApplicationServiceImpl implements PriceApplicationServic
 
   private final PriceFinder priceFinder;
 
+  /**
+   * Finds the price for a given brand, product and date.
+   * If there are more than one price, we will return the one with the highest priority
+   *
+   * @param brandId brand identifier
+   * @param productId product identifier
+   * @param date date to when we want to find the price
+   * @return the price for the given brand, product and date
+   */
   @Override
   public PriceModel findPrice(Long brandId, Long productId, LocalDateTime date) {
     return priceFinder.findPrice(brandId, productId, date);

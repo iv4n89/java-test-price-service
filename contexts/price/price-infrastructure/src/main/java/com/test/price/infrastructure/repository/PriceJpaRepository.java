@@ -11,6 +11,16 @@ import java.util.Optional;
 
 @Repository
 public interface PriceJpaRepository extends JpaRepository<PriceEntity, PriceEntityId> {
+
+  /**
+   * Find price by brandId, productId and date
+   * If there are more than one price, we will return the one with the highest priority
+   *
+   * @param brandId brand identifier
+   * @param productId product identifier
+   * @param date date when we want to find the price
+   * @return price found
+   */
   @Query(
       "SELECT p FROM PriceEntity p WHERE p.brandId = ?1 AND p.productId = ?2 AND p.startDate <= ?3 AND p.endDate >= ?3 ORDER BY p.priority DESC limit 1")
   Optional<PriceEntity> findByBrandIdAndProductIdAndStartDate(

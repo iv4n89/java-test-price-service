@@ -17,6 +17,16 @@ import org.springframework.stereotype.Component;
 @Component("priceRepository")
 public final class H2PriceRepository implements PriceRepository {
     private final PriceJpaRepository priceJpaRepository;
+
+    /**
+     * Find price by brand identifier, product identifier and application date
+     * If there are more than one price, we will return the one with the highest priority
+     *
+     * @param brandId brand identifier
+     * @param productId product identifier
+     * @param applicationDate date when we want to find the price
+     * @return price found
+     */
     @Override
     public PriceModel findPriceByBrandIdAndProductIdAndApplicationDate(BrandId brandId, ProductId productId, LocalDateTime applicationDate) {
         return priceJpaRepository

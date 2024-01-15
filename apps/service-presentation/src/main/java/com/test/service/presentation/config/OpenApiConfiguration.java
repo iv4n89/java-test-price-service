@@ -16,6 +16,11 @@ import java.util.List;
 public class OpenApiConfiguration {
     private final OpenApiConfigurationProperties openApiConfigurationProperties;
 
+    /**
+     * Creates an OpenAPI object.
+     *
+     * @return the OpenAPI object created
+     */
     @Bean
     OpenAPI api() {
         return new OpenAPI()
