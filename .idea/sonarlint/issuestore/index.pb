@@ -132,3 +132,7 @@ vcontexts/price/price-application/src/test/java/com/test/price/application/adapt
 vcontexts/price/price-application/src/main/java/com/test/price/application/adapters/input/usecases/PriceFinderImpl.java,a/0/a088511a84b1ee54cb5c0c3b8f854efb0294fbdd
 ≤
 Åcontexts/price/price-application/src/main/java/com/test/price/application/adapters/input/service/PriceApplicationServiceImpl.java,a/7/a70a8949f0f02db592a578d9b21625cd9d9628bf
+ô
+icontexts/price/price-infrastructure/src/main/java/com/test/price/infrastructure/entity/PriceEntityId.java,0/d/0d46a55bd94f8ea94b291ccd7b21a80e282bbd99
+ó
+gcontexts/price/price-infrastructure/src/main/java/com/test/price/infrastructure/entity/PriceEntity.java,9/5/95d1e51d94d84ee565e1b180e107e6164bed2244
