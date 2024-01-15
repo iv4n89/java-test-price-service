@@ -164,3 +164,12 @@ papps/service-presentation/src/main/java/com/test/service/presentation/config/Op
 fapps/service-presentation/src/main/java/com/test/service/presentation/config/OpenApiConfiguration.java,a/a/aa174e87adef1535b9baadea2c16a091b2786ac1
 ž
 ncontexts/shared/shared-domain/src/main/java/com/test/shared/domain/valueobject/PositiveNumericValueObject.java,a/9/a94d94d004de858cce444e089f51c318f08dbef7
+C
+contexts/Dockerfile,5/5/55a61059ae6ed6b69d765e7ec134f1a807d91ca2
+:
+
+Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+>
+DockerfileTest,9/4/94aa7d428fd6d30ad870dc0b80a9d1d479249e29
+8
+Makefile,8/3/836efb6e25a091dcb4ff8e1dbb2f0be6a5cbf14c
