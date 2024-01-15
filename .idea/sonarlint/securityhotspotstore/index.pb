@@ -59,3 +59,7 @@ ccontexts/shared/shared-domain/src/test/java/com/test/shared/domain/valueobject/
 _contexts/shared/shared-domain/src/test/java/com/test/shared/domain/valueobject/MoneyMother.java,3/7/37a801e06de88d6e8de6967034fcf96c78d086ab
 Ž
 ^contexts/shared/shared-domain/src/test/java/com/test/shared/domain/valueobject/DateMother.java,9/8/98b9cc33b341c7a03fb2ebc41a75e2d0c0c45331
+Š
+Zcontexts/shared/shared-application/src/main/java/com/test/shared/application/ErrorDto.java,9/a/9ad0ead4c5f6e0cd38b24daf616df016febb8abc
+Š
+Zcontexts/shared/shared-application/src/main/java/com/test/shared/application/Response.java,f/1/f141e097d4a6c7327ae79776ee850ae4455aa632
