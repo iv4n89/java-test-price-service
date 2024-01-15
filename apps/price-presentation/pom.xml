@@ -11,4 +11,43 @@
 
     <artifactId>price-presentation</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.test</groupId>
+            <artifactId>shared-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.test</groupId>
+            <artifactId>shared-domain</artifactId>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.test</groupId>
+            <artifactId>shared-infrastructure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.test</groupId>
+            <artifactId>price-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.test</groupId>
+            <artifactId>price-domain</artifactId>
+            <type>test-jar</type>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.test</groupId>
+            <artifactId>price-application</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.test</groupId>
+            <artifactId>price-infrastructure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
