@@ -1,9 +1,11 @@
 package com.test.price.domain.model;
 
+import com.test.price.domain.exception.PriceDomainException;
 import com.test.price.domain.valueobject.Currency;
 import com.test.price.domain.valueobject.PriceList;
 import com.test.price.domain.valueobject.Priority;
 import com.test.shared.domain.AggregateRoot;
+import com.test.shared.domain.exceptions.DomainException;
 import com.test.shared.domain.valueobject.BrandId;
 import com.test.shared.domain.valueobject.Money;
 import com.test.shared.domain.valueobject.ProductId;
@@ -21,6 +23,9 @@ public final class PriceModel implements AggregateRoot {
   private final Currency currency;
 
   private PriceModel(Builder builder) {
+    if (builder.startDate.isAfter(builder.endDate)) {
+      throw new PriceDomainException("Start date must be before end date");
+    }
     brandId = builder.brandId;
     startDate = builder.startDate;
     endDate = builder.endDate;
@@ -33,6 +38,10 @@ public final class PriceModel implements AggregateRoot {
 
   public static Builder builder() {
     return new Builder();
+  }
+
+  public Integer comparePriority(PriceModel priceModel) {
+    return this.priority.getValue() - priceModel.priority.getValue();
   }
 
   public BrandId getBrandId() {

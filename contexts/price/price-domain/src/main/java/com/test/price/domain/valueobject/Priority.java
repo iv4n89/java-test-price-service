@@ -13,6 +13,13 @@ public final class Priority extends IntegerValueObject {
     isNotNegative();
   }
 
+  @Override
+  protected void isNotNull() {
+    if (value == null) {
+      throw new IllegalArgumentException("Priority value cannot be null");
+    }
+  }
+
   private void isNotNegative() {
     if (value < 0) {
       throw new IllegalArgumentException("Priority value cannot be negative");
