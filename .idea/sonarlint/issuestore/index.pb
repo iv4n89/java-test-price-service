@@ -81,3 +81,5 @@ pcontexts/price/price-domain/src/main/java/com/test/price/domain/ports/input/ser
 econtexts/price/price-domain/src/main/java/com/test/price/domain/ports/input/usecases/PriceFinder.java,9/e/9efdff5a36fefd96ded72b2be44465a19b93061c
 œ
 lcontexts/price/price-domain/src/main/java/com/test/price/domain/ports/output/repository/PriceRepository.java,3/a/3ae7a75b4481196863a639754ec1dbb66fe63977
+K
+.github/workflows/maven.yml,c/7/c709f6995f23dae0da365bff70068f8288fa89e0
