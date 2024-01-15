@@ -1,4 +1,4 @@
-package com.test.application.dto;
+package com.test.price.application.dto;
 
 import java.time.LocalDateTime;
 

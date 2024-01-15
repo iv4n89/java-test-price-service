@@ -1,4 +1,4 @@
-package com.test.application.adapters.input.usecases;
+package com.test.price.application.adapters.input.usecases;
 
 import com.test.price.domain.model.PriceModel;
 import com.test.price.domain.ports.input.usecases.PriceFinder;

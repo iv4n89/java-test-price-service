@@ -1,4 +1,4 @@
-package com.test.application.exception;
+package com.test.price.application.exception;
 
 public final class PriceNotFoundException extends RuntimeException {
   public PriceNotFoundException(String message) {

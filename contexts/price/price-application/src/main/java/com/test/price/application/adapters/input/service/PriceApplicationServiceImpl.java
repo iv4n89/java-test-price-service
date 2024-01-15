@@ -1,4 +1,4 @@
-package com.test.application.adapters.input.service;
+package com.test.price.application.adapters.input.service;
 
 import com.test.price.domain.model.PriceModel;
 import com.test.price.domain.ports.input.service.PriceApplicationService;

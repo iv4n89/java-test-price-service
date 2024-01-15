@@ -1,4 +1,4 @@
-package com.test.application.dto;
+package com.test.price.application.dto;
 
 import com.test.price.domain.model.PriceModel;
 import com.test.shared.application.Response;
