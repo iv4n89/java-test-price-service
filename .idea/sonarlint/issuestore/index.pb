@@ -162,3 +162,5 @@ bapps/service-presentation/src/main/java/com/test/service/presentation/PriceServ
 papps/service-presentation/src/main/java/com/test/service/presentation/config/OpenApiConfigurationProperties.java,c/9/c997df8f864bd2e83e2aaf2eee9fb8dc7070b295
 –
 fapps/service-presentation/src/main/java/com/test/service/presentation/config/OpenApiConfiguration.java,a/a/aa174e87adef1535b9baadea2c16a091b2786ac1
+ž
+ncontexts/shared/shared-domain/src/main/java/com/test/shared/domain/valueobject/PositiveNumericValueObject.java,a/9/a94d94d004de858cce444e089f51c318f08dbef7

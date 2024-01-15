@@ -1,27 +1,19 @@
 package com.test.price.domain.valueobject;
 
-import com.test.shared.domain.valueobject.ValueObject;
+import com.test.shared.domain.valueobject.PositiveNumericValueObject;
 
-public final class PriceList extends ValueObject<Long> {
+public final class PriceList extends PositiveNumericValueObject<Long> {
   public PriceList(Long value) {
     super(value);
   }
 
   @Override
-  protected void isValid() {
-    isNotNull();
-    isNotNegative();
+  protected String getNullValueErrorMessage() {
+    return "PriceList value cannot be null";
   }
 
-  private void isNotNull() {
-    if (value == null) {
-      throw new IllegalArgumentException("PriceList value cannot be null");
-    }
-  }
-
-  private void isNotNegative() {
-    if (value < 0) {
-      throw new IllegalArgumentException("PriceList value cannot be negative");
-    }
+  @Override
+  protected String getNegativeValueErrorMessage() {
+    return "PriceList value cannot be negative";
   }
 }

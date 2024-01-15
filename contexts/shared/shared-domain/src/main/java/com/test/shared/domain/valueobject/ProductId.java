@@ -1,26 +1,19 @@
 package com.test.shared.domain.valueobject;
 
-public final class ProductId extends ValueObject<Long> {
+public final class ProductId extends PositiveNumericValueObject<Long> {
 
   public ProductId(Long value) {
     super(value);
   }
 
   @Override
-  protected void isValid() {
-    isNotNull();
-    isNotNegative();
+  protected String getNullValueErrorMessage() {
+    return "ProductId value cannot be null";
   }
 
-  private void isNotNull() {
-    if (value == null) {
-      throw new IllegalArgumentException("The value of productId cannot be null");
-    }
+  @Override
+  protected String getNegativeValueErrorMessage() {
+    return "ProductId value cannot be negative";
   }
 
-  private void isNotNegative() {
-    if (value < 0) {
-      throw new IllegalArgumentException("The value of productId cannot be negative");
-    }
-  }
 }
