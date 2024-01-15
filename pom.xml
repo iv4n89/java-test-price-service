@@ -14,6 +14,11 @@
     <groupId>com.test</groupId>
     <artifactId>prices-service</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>contexts</module>
+        <module>apps</module>
+    </modules>
 
     <properties>
         <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
@@ -34,7 +39,65 @@
 
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>shared-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>shared-domain</artifactId>
+                <version>${project.version}</version>
+                <type>test-jar</type>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>shared-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>shared-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>price-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>price-domain</artifactId>
+                <version>${project.version}</version>
+                <type>test-jar</type>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>price-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>price-application</artifactId>
+                <version>${project.version}</version>
+                <type>test-jar</type>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>price-infrastructure</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>price-infrastructure</artifactId>
+                <version>${project.version}</version>
+                <type>test-jar</type>
+            </dependency>
+            <dependency>
+                <groupId>com.test</groupId>
+                <artifactId>price-presentation</artifactId>
+                <version>${project.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
