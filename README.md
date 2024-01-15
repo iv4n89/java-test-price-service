@@ -307,7 +307,7 @@ Durante esta sección del presente Readme se tratará de explicar, a grandes ras
 
   Como ya se expuso durante la explicación de la estructura del proyecto, se ha optado por crear un bounded context 'shared' para incluir elementos compartidos por los diferentes contextos.
 
-  Aun cuando estamos ante un microservicio, se ha querido dar una visión más abierta a posibles cambios y adiciones futuras, de manera que se pueda escalar el proyecto de manera más sencilla.
+  Como se revisará en un punto posterior, se ha optado por esta estructura para hacer el proyecto más escalable y mantenible.
 
   El hecho de tener un bounded context 'shared' para compartir clave entre diferentes contextos hace que evitemos dependencias entre contextos o código duplicado entre ellos.
 
