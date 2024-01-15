@@ -63,3 +63,5 @@ _contexts/shared/shared-domain/src/test/java/com/test/shared/domain/valueobject/
 Zcontexts/shared/shared-application/src/main/java/com/test/shared/application/ErrorDto.java,9/a/9ad0ead4c5f6e0cd38b24daf616df016febb8abc
 Š
 Zcontexts/shared/shared-application/src/main/java/com/test/shared/application/Response.java,f/1/f141e097d4a6c7327ae79776ee850ae4455aa632
+±
+€contexts/shared/shared-infrastructure/src/main/java/com/test/shared/infrastructure/exception/handler/GlobalExceptionHandler.java,e/3/e3726e9cc6c33fb09c421a1b0862ee4b825d7c16
