@@ -156,3 +156,5 @@ napps/price-presentation/src/main/java/com/test/price/presentation/exception/han
 bapps/price-presentation/src/test/java/com/test/price/presentation/PricePresentationTestConfig.java,4/b/4b4c16c7ea061d1f63383ef9a15412d8d419c4b8
 ™
 iapps/price-presentation/src/test/java/com/test/price/presentation/controller/PricePostControllerTest.java,8/f/8f34152b71a2a12f7e13055c594e7f38064dfae7
+’
+bapps/service-presentation/src/main/java/com/test/service/presentation/PriceServiceApplication.java,c/e/ce18ce8fbe510dda4c4681d91995a6b6fe739fa7
