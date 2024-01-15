@@ -142,3 +142,9 @@ rcontexts/price/price-infrastructure/src/main/java/com/test/price/infrastructure
 kcontexts/price/price-infrastructure/src/main/java/com/test/price/infrastructure/mapper/PriceDataMapper.java,e/1/e161bedcdbc703e7f4a236bbda84d3b853b56e9d
 ≤
 Åcontexts/price/price-infrastructure/src/main/java/com/test/price/infrastructure/adapters/output/repository/H2PriceRepository.java,6/0/601939d55843fa46a62cef929c80f86d032e5144
+¢
+rcontexts/price/price-infrastructure/src/test/java/com/test/price/infrastructure/PriceInfrastructureTestConfig.java,7/2/7215f7168d5f83592662673ffccc683d154c84c5
+ü
+ocontexts/price/price-infrastructure/src/test/java/com/test/price/infrastructure/mapper/PriceDataMapperTest.java,a/8/a848b01ebdade78e27aa7ffaf9fa8956378b77fe
+∂
+Öcontexts/price/price-infrastructure/src/test/java/com/test/price/infrastructure/adapters/output/repository/H2PriceRepositoryTest.java,b/b/bb4b52dc537d9f634763228bd22a74b1bbb3638f
