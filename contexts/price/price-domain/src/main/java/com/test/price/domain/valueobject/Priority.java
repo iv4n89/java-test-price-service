@@ -1,28 +1,23 @@
 package com.test.price.domain.valueobject;
 
-import com.test.shared.domain.valueobject.IntegerValueObject;
+import com.test.shared.domain.valueobject.PositiveNumericValueObject;
 
-public final class Priority extends IntegerValueObject {
+public final class Priority extends PositiveNumericValueObject<Integer> {
   public Priority(Integer value) {
     super(value);
   }
 
   @Override
-  protected void isValid() {
-    super.isValid();
-    isNotNegative();
+  protected String getNullValueErrorMessage() {
+    return "Priority value cannot be null";
   }
 
-  @Override
-  protected void isNotNull() {
-    if (value == null) {
-      throw new IllegalArgumentException("Priority value cannot be null");
-    }
-  }
-
-  private void isNotNegative() {
-    if (value < 0) {
-      throw new IllegalArgumentException("Priority value cannot be negative");
-    }
+  /**
+   * Returns the error message for a negative value.
+   *
+   * @return the error message for a negative value
+   */
+  protected String getNegativeValueErrorMessage() {
+    return "Priority value cannot be negative";
   }
 }
