@@ -158,3 +158,7 @@ bapps/price-presentation/src/test/java/com/test/price/presentation/PricePresenta
 iapps/price-presentation/src/test/java/com/test/price/presentation/controller/PricePostControllerTest.java,8/f/8f34152b71a2a12f7e13055c594e7f38064dfae7
 ’
 bapps/service-presentation/src/main/java/com/test/service/presentation/PriceServiceApplication.java,c/e/ce18ce8fbe510dda4c4681d91995a6b6fe739fa7
+ 
+papps/service-presentation/src/main/java/com/test/service/presentation/config/OpenApiConfigurationProperties.java,c/9/c997df8f864bd2e83e2aaf2eee9fb8dc7070b295
+–
+fapps/service-presentation/src/main/java/com/test/service/presentation/config/OpenApiConfiguration.java,a/a/aa174e87adef1535b9baadea2c16a091b2786ac1
