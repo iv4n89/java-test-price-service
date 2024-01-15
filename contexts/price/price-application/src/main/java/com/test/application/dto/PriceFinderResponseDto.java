@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 @Builder
-public class PriceFinderResponseDto implements Response {
+public final class PriceFinderResponseDto implements Response {
     private final Long productId;
     private final Long brandId;
     private final Long priceList;
