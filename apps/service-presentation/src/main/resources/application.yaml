@@ -32,3 +32,15 @@ logging:
   level:
     org.hibernate.SQL: DEBUG
 
+openapi:
+  title: 'Price Service API'
+  description: 'Price Service API'
+  version: '1.0.0'
+  url: 'http://localhost:8081'
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
