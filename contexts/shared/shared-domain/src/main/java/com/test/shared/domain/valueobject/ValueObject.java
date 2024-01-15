@@ -7,6 +7,7 @@ public abstract class ValueObject<T> {
 
   protected ValueObject(T value) {
     this.value = value;
+    isValid();
   }
 
   public T getValue() {
